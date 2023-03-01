@@ -64,8 +64,8 @@ a:hover {
 :hover {
     transition: all 0.5s ease;
 }
-.z-index {
-    z-index: 50;
+.section-padding {
+    padding: 100px 0;
 }
 /* Header */
 /* header-menu */
@@ -89,13 +89,12 @@ a:hover {
     margin-bottom: 100px;
 }
 .header__offer_img {
-    width: 600px;
+    width: 100%;
 }
 
 /* About me */
 .about {
     background: #F6F6F6;
-    padding: 100px 0;
 }
 .about__wrapper {
     text-align: center;
@@ -109,11 +108,27 @@ a:hover {
 .about__text:last-child {
     margin-bottom: 0px;
 }
+/* Skills */
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.skills__wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.skills-lv__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
 
 /* Portfolio */
-
 .portfolio {
-    padding: 100px 0;
+    background: #F6F6F6;
 }
 .portfolio__title {
     text-align: center;
@@ -135,14 +150,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #F6F6F6;
+    background: #dbd7d7;
 }
 .portfolio__jobs_link {
     display: flex;
     align-items: center;
 }
 .portfolio__jobs_link_img {
-    width: 350px;
+    width: 100%;
 }
 .portfolio__jobs_title {
     font-size: 28px;
@@ -166,16 +181,12 @@ a:hover {
 
 /* Footer */
 
-.footer {
-    background: #F6F6F6;
-    padding: 100px 0;
-}
 .footer__title {
     text-align: center;
     padding-bottom: 40px;
 }
 .footer__contacts_wrap {
-    background: #bda3a3;
+    background: #F6F6F6;
     border-radius: 30px;
     padding: 30px 15px 50px 15px;
     width: fit-content;
@@ -200,7 +211,7 @@ a:hover {
     color: #000;
 }
 .footer__contacts_link:hover {
-    color: #3d3939;
+    color: #7a7070;
 }
 .footer__social_wrapper {
     border-top: 1px solid #000;
@@ -215,4 +226,128 @@ a:hover {
 }
 .footer__social_icon-vk {
     width: 48px;
+}
+
+/* hamburger */
+
+/* .hamburger-lines {
+    width: fit-content;
+    margin-left: auto;
+}
+.line {
+    display: flex;
+    margin: 5px;
+    border: 3px solid #000;
+    border-radius: 3px;
+    width: 33px;
+}
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.hamburger-menu__item {
+    padding-bottom: 7px;
+}
+.hamburger-menu__item:last-child {
+    padding-bottom: 0px;
+}
+.hamburger-menu__list {
+    padding: 25px;
+    background: #F6F6F6;
+    width: fit-content;
+    margin-left: auto;
+    text-align: end;
+}
+.hamburger-menu__link {
+    color: #000;
+}
+.hamburger__wrapper {
+    position: relative;
+    margin: 25px 0;
+}
+
+.display-block {
+    display: block;
+}
+.display-none {
+    display: none;
+} */
+
+/*Responsive*/
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+		max-width: 960px;
+	}
+}
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+    .portfolio__jobs_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 40px;
+        margin: 0 auto;
+    }
+    .skills__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 40px;
+        margin: 0 auto;
+    }
+}
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+    .header__offer_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__offer_info {
+        margin: 20px 0;
+    }
+}
+/* Extra small: 480px - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+		width: 90%;
+	}
+    .portfolio__jobs_list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2%;
+        row-gap: 40px;
+        margin: 0 auto;
+    }
+	
+}
+
+/*Practic Semena: 0px (320px) - 479px*/
+@media (max-width: 479px){
+	.container {
+		padding: 0 15px;
+	}
+    .header-menu__list {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__contacts_wrap {
+        width: auto;
+    }
+    .footer__contacts_link {
+        font-size: 16px;
+    }
 }
