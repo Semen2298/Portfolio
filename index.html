@@ -24,79 +24,66 @@
         <div class="container">
             <nav class="header-menu__wrapper">
                 <ul class="header-menu__list">
-                    <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                            Home 
-                        </a>
+                    <li data-link="header-offer" class="header-menu__item">
+                        Home
+                    </li>   
+                    <li data-link="about" class="header-menu__item">
+                        About me
                     </li>
-                    <li class="header-menu__item">
-                        <a href="#about" class="header-menu__link">
-                            About me
-                        </a>
+                    <li data-link="skills" class="header-menu__item">
+                        Skills
                     </li>
-                    <li class="header-menu__item">
-                        <a href="#skills" class="header-menu__link">
-                            Skills
-                        </a>
+                    <li data-link="portfolio" class="header-menu__item">
+                        Portfolio
                     </li>
-                    <li class="header-menu__item">
-                        <a href="#portfolio" class="header-menu__link">
-                            Portfolio
-                        </a>
+                    <li data-link="certificate" class="header-menu__item">
+                        Certificate
                     </li>
-                    <li class="header-menu__item">
-                        <a href="#contacts" class="header-menu__link">
-                            Contacts
-                        </a>
+                    <li data-link="contacts" class="header-menu__item">
+                        Contacts
                     </li>
                 </ul>
             </nav>
             
-
             <!-- Hamburger -->
-            
-            <!-- <div class="hamburger__wrapper">
-                
-                <div class="hamburger-lines">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+            <nav>
+                <div class="navbar">
+                  <div class="nav-container">
+                      <input class="checkbox" type="checkbox" name="" id="" />
+                      <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                      </div>
+                    <div class="menu-items header-menu__list">
+                        <li data-link="header-offer" class="header-menu__item">
+                            Home
+                        </li>   
+                        <li data-link="about" class="header-menu__item">
+                            About me
+                        </li>
+                        <li data-link="skills" class="header-menu__item">
+                            Skills
+                        </li>
+                        <li data-link="portfolio" class="header-menu__item">
+                            Portfolio
+                        </li>
+                        <li data-link="certificate" class="header-menu__item">
+                            Certificate
+                        </li>
+                        <li data-link="contacts" class="header-menu__item">
+                            Contacts
+                        </li>
+                    </div>
+                  </div>
                 </div>
-                <nav class="hamburger-menu">
-                    <ul class="hamburger-menu__list">
-                        <li class="hamburger-menu__item">
-                            <a href="" class="hamburger-menu__link">
-                                Home 
-                            </a>
-                        </li>
-                        <li class="hamburger-menu__item">
-                            <a href="#about" class="hamburger-menu__link">
-                                About me
-                            </a>
-                        </li>
-                        <li class="hamburger-menu__item">
-                            <a href="#skills" class="hamburger-menu__link">
-                                Skills
-                            </a>
-                        </li>
-                        <li class="hamburger-menu__item">
-                            <a href="#portfolio" class="hamburger-menu__link">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li class="hamburger-menu__item">
-                            <a href="#contacts" class="hamburger-menu__link">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
- -->
-
+              </nav>
             <!-- /Hamburger -->
-
-            <div class="header__offer_wrapper">
+        </div>
+    </header>
+    <section class="head-offer" id="head-offer">
+        <div class="container">
+            <div class="header__offer_wrapper" id="header-offer">
                 <div class="header__offer">
                     <h1 class="header__offer_title">
                         Semen Muzalevskyi
@@ -106,12 +93,12 @@
                         24 years old, Barnaul
                     </p>
                 </div>
-                <div class="header__offer_photo">
+                <div class="header__offer_photo parallax-layer">
                     <img src="./img/semen.jpg" alt="photo" class="header__offer_img">
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <section class="about section-padding" id="about">
         <div class="container">
             <div class="about__wrapper">
@@ -335,6 +322,33 @@
             </nav>
         </div>
     </section>
+    <section class="certificate section-padding" id="certificate">
+        <div class="container">
+            <div class="certificate__wrapper">
+                <h2 class="certificate__title">
+                    Сертификаты
+                </h2>
+                <div class="certificate__slides_wrapper ">
+                    <div class="certificate__slide_wrapper">
+                        <div class="certificate__slide active">
+                            <img src="./img/diplom_Музалевский Семен Сергеевич_12-10-2021_page-0001.jpg" alt="" class="certificate__slide_img">
+                        </div>
+                        <div class="certificate__slide">
+                            <img src="./img/Сертификат-html-css_page-0001.jpg" alt="" class="certificate__slide_img">
+                        </div>
+                        <div class="certificate__slide">
+                            <img src="./img/сертификат-итоговая_page-0001.jpg" alt="" class="certificate__slide_img">
+                        </div>
+                    </div>
+                    <div class="certificate__scrollbars">
+                        <span class="certificate__scrollbar active"></span>
+                        <span class="certificate__scrollbar"></span>
+                        <span class="certificate__scrollbar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer section-padding" id="contacts">
         <div class="container">
             <h2 class="footer__title">
@@ -372,7 +386,11 @@
             </div>
         </div>
     </footer>
-    <link rel="stylesheet" href="./js/jquery-3.6.3.min.js">
-    <link rel="stylesheet" href="./js/main.js">
+
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/jquery.parallax.min.js"></script>
+    <script src="./js/scrollHead.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
