@@ -176,17 +176,24 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     background: #dbd7d7;
+    transition: all 0.5s ease 0s;
+}
+.portfolio__jobs_item:hover {
+    transform: scale(1.1);
 }
 .portfolio__jobs_link {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .portfolio__jobs_link_img {
-    width: 100%;
+    width: 300px;
+    height: 160px;
 }
 .portfolio__jobs_title {
     font-size: 28px;
     text-align: center;
+    margin: 20px 0;
 }
 .portfolio__jobs_link-wrapper {
     display: flex;
