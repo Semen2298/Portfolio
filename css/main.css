@@ -128,10 +128,7 @@ a:hover {
     margin-bottom: 20px;
 }
 .about__text {
-    margin-bottom: 30px;
-}
-.about__text:last-child {
-    margin-bottom: 0px;
+    line-height: 45px;
 }
 /* Skills */
 
