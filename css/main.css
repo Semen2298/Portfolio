@@ -122,13 +122,26 @@ a:hover {
     background: #F6F6F6;
 }
 .about__wrapper {
-    text-align: center;
 }
 .about__title {
     margin-bottom: 20px;
+    text-align: center;
 }
 .about__text {
-    line-height: 45px;
+    text-align-last: left;
+    line-height: 35px;
+}
+.about__wrapper ul span {
+    font-weight: 700;
+}
+.about__wrapper ul {
+    text-align-last: left;
+    line-height: 35px;
+
+}
+.about__wrapper ul li {
+    list-style-type: disc;
+    display: revert;
 }
 /* Skills */
 
